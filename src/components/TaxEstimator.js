@@ -23,7 +23,7 @@ const TaxEstimator = () => {
 
   return (
     <div style={{ backgroundColor: "#fff3cd", padding: "20px", borderRadius: "10px", textAlign: "center" }}>
-      <h2>Tax Estimator</h2>
+      <h2>Remote App 3: Tax Estimator</h2>
       {loading ? <p>Loading tax data... (this app loads slower!) ⏳</p> : (
         <>
           <label>
