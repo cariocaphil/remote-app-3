@@ -30,7 +30,7 @@ module.exports = {
       name: "remoteApp3", // Unique name for this remote app
       filename: "remoteEntry.js",
       exposes: {
-        "./InterestCalculator": "./src/components/InterestCalculator",
+        "./TaxEstimator": "./src/components/TaxEstimator",
       },
       shared: { 
         react: { singleton: true, requiredVersion: "^18.0.0" },
