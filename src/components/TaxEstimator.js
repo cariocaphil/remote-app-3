@@ -1,5 +1,20 @@
 import React, { useState, useEffect } from "react";
 
+const tileStyle = {
+    backgroundColor: "#ffffff",
+    padding: "20px",
+    margin: "20px",
+    borderRadius: "10px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    maxWidth: "400px",
+    textAlign: "center",
+    transition: "transform 0.2s ease-in-out",
+};
+
+const tileHoverStyle = {
+    transform: "scale(1.05)",
+};
+
 const TaxEstimator = () => {
   const [income, setIncome] = useState(50000);
   const [taxRate, setTaxRate] = useState(25);
@@ -22,7 +37,9 @@ const TaxEstimator = () => {
   }, [income, taxRate]);
 
   return (
-    <div style={{ backgroundColor: "#fff3cd", padding: "20px", margin: "20px 0", borderRadius: "10px" }}>
+      <div style={tileStyle}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = tileHoverStyle.transform)}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}>
       <h2>Remote App 3: Tax Estimator</h2>
       <p>Calculate estimated tax and net income based on your earnings.</p>
 
