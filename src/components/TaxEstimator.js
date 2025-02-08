@@ -23,7 +23,7 @@ const TaxEstimator = () => {
 
   return (
     <div style={{ backgroundColor: "#fff3cd", padding: "20px", margin: "20px 0", borderRadius: "10px" }}>
-      <h2>Tax Estimator</h2>
+      <h2>Remote App 3: Tax Estimator</h2>
       <p>Calculate estimated tax and net income based on your earnings.</p>
 
       <label>
